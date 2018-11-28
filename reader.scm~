@@ -64,3 +64,4 @@
     (flush-all-ports)
     (close-port output)))
 
+(define (find-functions-boundaries func)
