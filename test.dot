@@ -1,0 +1,1 @@
+digraph { rankdir=LT Globals [ shape="record" label="Global Vars|#define MAX 100 - Ln 5|#define LEN 300 - Ln 6" ]  3 [ label="#include <time.h>" shape="rectangles" ]  2 [ label="#include <unistd.h>" shape="rectangles" ]  1 [ label="#include <stdio.h>" shape="rectangles" ]  1 -> main 2 -> main 3 -> main  } 
