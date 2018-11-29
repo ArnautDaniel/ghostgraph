@@ -2,7 +2,7 @@
 (include "doggo.scm")
 (include "graphviz.scm")
 
-(define working-file "/home/silver/ghostgraph/test.c")
+(define working-file "/home/silver/rw-code/apue.2e/db/db.c")
 (define hash-size 1000)
 
 (define (read-file dst)
@@ -56,7 +56,7 @@
 	     hashtbl))))
 
 (define (write-simple-digraph origin)
-  (let ((output (open-output-file "/home/silver/ghostgraph/test.dot")))
+  (let ((output (open-output-file "/home/silver/projects/ghostgraph/test.dot")))
     (display "digraph { rankdir=LT " output)
     (display (globals-to-digraph  (find-vars test-ref test-matcher 'constant-t)) output)
     (display (imports-to-digraph (find-vars test-ref test-matcher 'import) origin) output)

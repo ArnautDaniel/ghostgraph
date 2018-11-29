@@ -1,0 +1,25 @@
+digraph {
+	graph [rankdir=BT];
+	Globals	 [label="Global Vars|#define SEP ':' - Ln 14|#define NEWLINE     '\\n' - Ln 16|#define FREE_OFF      0	- Ln 25|#define PTR_SZ        6	 - \
+Ln 22|#define NHASH_DEF	 137	 - Ln 24|#define HASH_OFF PTR_SZ	- Ln 26|#define SPACE       ' '	 - Ln 15|#define PTR_MAX  999999	 \
+- Ln 23|#define IDXLEN_SZ	   4	- Ln 13",
+		shape=record];
+	3	 [label="#include <fcntl.h>",
+		shape=rectangle];
+	3 -> _db_alloc;
+	5	 [label="#include <errno.h>",
+		shape=rectangle];
+	5 -> _db_alloc;
+	6	 [label="#include <sys/uio.h>",
+		shape=rectangle];
+	6 -> _db_alloc;
+	2	 [label="#include apue_db.h",
+		shape=rectangle];
+	2 -> _db_alloc;
+	4	 [label="#include <stdarg.h>",
+		shape=rectangle];
+	4 -> _db_alloc;
+	1	 [label="#include apue.h",
+		shape=rectangle];
+	1 -> _db_alloc;
+}
